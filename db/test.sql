@@ -1,0 +1,14 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE coordinates (id integer primary key, x1 real, x2 real);
+INSERT INTO "coordinates" VALUES(1,0.0,1.0);
+INSERT INTO "coordinates" VALUES(2,2.5,0.0);
+INSERT INTO "coordinates" VALUES(3,-3.145,-2.0);
+INSERT INTO "coordinates" VALUES(4,2.333,3.22);
+INSERT INTO "coordinates" VALUES(5,20.0,33.22);
+CREATE TABLE frequencies (len integer, num integer);
+INSERT INTO "frequencies" VALUES(1,1);
+INSERT INTO "frequencies" VALUES(2,2);
+INSERT INTO "frequencies" VALUES(3,1);
+INSERT INTO "frequencies" VALUES(14,1);
+COMMIT;
